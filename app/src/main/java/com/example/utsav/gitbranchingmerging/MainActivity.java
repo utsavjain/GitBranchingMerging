@@ -1,5 +1,6 @@
 package com.example.utsav.gitbranchingmerging;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,13 +13,25 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     @Override
+    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
+        super.onCreate(savedInstanceState, persistentState);
+        setContentView(R.layout.activity_main);
+        ((Button) findViewById(R.id.button1)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
+            }
+        });
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ((Button) findViewById(R.id.button1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"hi user wtup?",Toast.LENGTH_SHORT).show();
             }
         });
     }
