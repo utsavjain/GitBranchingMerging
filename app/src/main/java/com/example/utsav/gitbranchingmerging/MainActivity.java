@@ -19,11 +19,14 @@ public class MainActivity extends ActionBarActivity {
         ((Button) findViewById(R.id.button1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
+            showMessage();
             }
         });
     }
-
+    private int showMessage(){
+        Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
+        return 0;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
