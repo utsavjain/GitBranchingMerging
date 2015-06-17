@@ -27,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
         Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_SHORT).show();
 
         // line one
+        // line 2
         return 0;
     }
     @Override
