@@ -23,7 +23,10 @@ public class MainActivity extends ActionBarActivity {
             }
         });
     }
-
+    private int showMessage(){
+        Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
+        return 0;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +38,10 @@ public class MainActivity extends ActionBarActivity {
             }
         });
     }
-    public void showMessage(){
+    /*public void showMessage(){
         Toast.makeText(getApplicationContext(),"hi user wtup?",Toast.LENGTH_SHORT).show();
     }
-    @Override
+    */@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
