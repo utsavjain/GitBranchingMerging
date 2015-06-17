@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
 
         // line one
         // line 2
+        // line 3
         return 0;
     }
     @Override
