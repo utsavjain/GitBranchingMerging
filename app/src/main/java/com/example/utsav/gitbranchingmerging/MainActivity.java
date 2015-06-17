@@ -24,7 +24,7 @@ public class MainActivity extends ActionBarActivity {
         });
     }
     private int showMessage(){
-        Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
         return 0;
     }
     @Override
