@@ -19,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
         ((Button) findViewById(R.id.button1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"hi user",Toast.LENGTH_LONG).show();
+                showMessage();
             }
         });
     }
@@ -31,12 +31,13 @@ public class MainActivity extends ActionBarActivity {
         ((Button) findViewById(R.id.button1)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"hi user wtup?",Toast.LENGTH_SHORT).show();
+                showMessage();
             }
         });
     }
-
-
+    public void showMessage(){
+        Toast.makeText(getApplicationContext(),"hi user wtup?",Toast.LENGTH_SHORT).show();
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
